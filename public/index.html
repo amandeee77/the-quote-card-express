@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>The Quote Card Express!</h1>
+        <form id="quoteForm">
+            <textarea id="quoteInput" placeholder="Enter your quote here..." required></textarea>
+            <button type="submit">Generate Quote Card</button>
+        </form>
+        <div id="quoteCard" class="quote-card hidden">
+            <p id="quoteDisplay"></p>
+            <button id="copyButton">Copy Quote</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
