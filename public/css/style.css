@@ -1,0 +1,110 @@
+/* Reset some default spacing and center the card on screen */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to top, #000080, #ff00ff), 
+                url('../images/datallama.png') no-repeat center center;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.main {
+    position: absolute;
+    bottom: 10vh; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* Style the quote card with a bold gradient and soft edges */
+.quote-card {
+    background: linear-gradient(to bottom, #7f5fd8, #4b0082);
+    padding: 3rem;
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+    border: 5px solid white;
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+    position: relative;
+}
+
+/* Style the quote text */
+.quote {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* Style the author text */
+.author {
+    font-size: 1.4rem;
+    color: white;
+    font-style: italic;
+}
+
+/* Decorative quotation marks */
+.quote-card::before,
+.quote-card::after {
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.4);
+    opacity: 0.6;
+    position: absolute;
+    font-family: serif;
+    line-height: 1;
+}
+
+.quote-card::before {
+    content: '“';
+    top: -1.5rem;
+    left: 1.5rem;
+}
+
+.quote-card::after {
+    content: '”';
+    bottom: -1.5rem;
+    right: 1.5rem;
+}
+
+// Responsive adjustments for smaller screens
+@media (max-width: 600px) {
+    .quote-card {
+        padding: 2rem;
+    }
+    
+    .quote {
+        font-size: 1.5rem;
+    }
+    
+    .author {
+        font-size: 1.2rem;
+    }
+    
+    .quote-card::before,
+    .quote-card::after {
+        font-size: 3rem;
+    }
+} 
+// Responsive adjustments for larger screens
+@media (min-width: 1200px) {
+    .quote-card {
+        padding: 4rem;
+    }
+    
+    .quote {
+        font-size: 2.5rem;
+    }
+    
+    .author {
+        font-size: 1.6rem;
+    }
+    
+    .quote-card::before,
+    .quote-card::after {
+        font-size: 5rem;
+    }
+}
