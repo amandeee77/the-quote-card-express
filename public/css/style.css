@@ -70,7 +70,7 @@ body {
     right: 1.5rem;
 }
 
-// Responsive adjustments for smaller screens
+/* Responsive adjustments for smaller screens */
 @media (max-width: 600px) {
     .quote-card {
         padding: 2rem;
@@ -89,7 +89,7 @@ body {
         font-size: 3rem;
     }
 } 
-// Responsive adjustments for larger screens
+/* Responsive adjustments for larger screens */
 @media (min-width: 1200px) {
     .quote-card {
         padding: 4rem;
