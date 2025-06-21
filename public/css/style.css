@@ -1,3 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dfc5da; /* Light background for contrast */
+}
+
 .background-img {
     position: absolute;
     background-image: url('../images/datallama.png'); 
