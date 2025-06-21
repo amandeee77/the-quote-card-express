@@ -20,6 +20,11 @@ async function getRandomImage() {
     try {
         const response = await fetch(endpoint);
         const returnedData = await response.json();
+
+        if (!returnedData.urls || !returnedData.urls.regular) {
+            throw new Error(`Unexpected response: ${JSON.stringify(returnedData)}`);
+        }
+
         return returnedData.urls.regular;
     } catch (error) {
         console.error("Error fetching image:", error);

@@ -18,7 +18,6 @@ async function getRandomImage() {
         console.error(error);
     }
 }
-
 getRandomImage();
 
 
