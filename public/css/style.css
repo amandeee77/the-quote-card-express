@@ -21,18 +21,21 @@ body {
     z-index: -1;
 }
 .quote-container {
-  background: #fff;
-  padding: 2rem 3rem;
+  background: #d89bb2;
+  padding: 4rem 5rem;       
+  position: relative;
   border-radius: 12px;
-  border: 3px solid #fff; /* white border */
+  border: 3px solid #fff;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  max-width: 500px;
+  max-width: 800px;       
+  width: 80vw;               
+  min-height: 400px;        
   text-align: center;
 }
 .quote-text {
     font-size: 2rem;
     font-weight: bold;
-    color: white;
+    color: rgb(250, 248, 249);
     text-align: center;
     max-width: 70%;
     line-height: 1.4;
@@ -45,20 +48,21 @@ body {
     font-style: italic;
 }
 .quote-container::before {
-    content: open-quote;
-    font-size: 5em;
-    color: #fff;
-    position: absolute;
-    top: -50px;
-    left: -50px;
+  content: open-quote;
+  font-size: 3rem;
+  color: #fff;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 }
+
 .quote-container::after {
-    content: close-quote;
-    font-size: 5em;
-    color: #fff;
-    position: absolute;
-    bottom: -50px;
-    right: -50px;
+  content: close-quote;
+  font-size: 3rem;
+  color: #fff;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
 }
 /* Tablet: Medium Screens */
 @media (max-width: 1024px) {
