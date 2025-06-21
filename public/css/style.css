@@ -1,6 +1,6 @@
 .background-img {
     position: absolute;
-    background-image: url('https://source.unsplash.com/random/1920x1080?inspirational'); 
+    background-image: url('../images/datallama.png'); 
     background-size: cover; 
     background-position: center; 
     top: 0; 
@@ -11,16 +11,15 @@
     z-index: -1;
 }
 .quote-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
     text-align: center;
-    height: 85vh;
-    width: 85vw;
-    border: 2px solid white;
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    padding: 20px;
+    max-width: 600px;
+    z-index: 10;
 }
 .quote-text {
     font-size: 2rem;
