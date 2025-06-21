@@ -21,7 +21,6 @@ async function getRandomImage() {
 
 getRandomImage();
 
-getRandomImage();*/
 
 /*const quotes = [
     {
